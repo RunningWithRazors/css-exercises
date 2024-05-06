@@ -1,19 +1,28 @@
 .header  {
   font-family: monospace;
-  background: papayawhip;
+  background: papayawhip;  
+  display: flex;  
+  flex-basis: auto;    
+  flex-direction: row;
+  justify-content: space-between;  
 }
 
 .logo {
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 900;   
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 8px;   
 }
 
 ul {
   /* this removes the dots on the list items*/
+  display: flex;
+  gap: 15px;
   list-style-type: none;
+  margin: 8px;
+  padding: 8px;
 }
 
 a {
@@ -23,3 +32,17 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+.left-links {
+  display: flex;
+  align-self: center;
+}
+
+.right-links {
+  display: flex;  
+  align-self: center;
+}
+
+/*Continuare a lavorare su .header, buone probabilita' di ottenere il risultato sperato se combiniamo .header
+con .left-links, .logo e .right-links. Siamo sulla strada giusta. Includere anche classi quali ul e a.
+In poche parole, non focalizzarsi su un'unica classe.*/
